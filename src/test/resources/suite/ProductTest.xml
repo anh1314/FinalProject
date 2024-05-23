@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ProductTest" verbose="1" parallel="methods" >
+
+    <test name="Add, Edit, Search data table" >
+        <classes>
+            <class name="AT04_CMS.testcases.ProductTest">
+                <methods>
+                    <include name="testAddNewProductSuccess"> </include>
+                    <include name="testEditProduct"> </include>
+                    <include name="searchDataTable"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Name, Unit null" >
+        <classes>
+            <class name="AT04_CMS.testcases.ProductTest">
+                <methods>
+                    <include name="testAddProduct_withProductNameNull"> </include>
+                    <include name="testAddProduct_withUnitNull"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="UnitPrice, Discount null"  >
+        <classes>
+            <class name="AT04_CMS.testcases.ProductTest">
+                <methods>
+                    <include name="testAddProduct_withUnitPriceNull"> </include>
+                    <include name="testAddProduct_withDiscountNull"> </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
+

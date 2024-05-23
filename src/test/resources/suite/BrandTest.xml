@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BrandTest" verbose="1" >
+
+    <test name="Brand" parallel="methods">
+        <classes>
+            <class name="AT04_CMS.testcases.BrandTest"> </class>
+        </classes>
+    </test>
+
+</suite>
