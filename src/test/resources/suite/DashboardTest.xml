@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DashboardTest" verbose="1" >
+
+    <test name="Dashboard" parallel="methods">
+        <classes>
+            <class name="AT04_CMS.testcases.DashboardTest"> </class>
+        </classes>
+    </test>
+
+</suite>

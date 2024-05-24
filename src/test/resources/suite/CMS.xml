@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="eCommerce CMS" verbose="1">
+    <test name="Flow test" >
+        <parameter name="BROWSER" value="chrome"> </parameter>
+        <classes>
+            <class name="AT04_CMS.testcases.FlowTest"> </class>
+        </classes>
+    </test>
+
+    <test name="Login, Dashboard, Brand" parallel="classes">
+        <parameter name="BROWSER" value="edge"></parameter>
+        <classes>
+            <class name="AT04_CMS.testcases.LoginTest"></class>
+            <class name="AT04_CMS.testcases.DashboardTest"></class>
+            <class name="AT04_CMS.testcases.BrandTest"></class>
+            <class name="AT04_CMS.testcases.FlowTest"></class>
+        </classes>
+    </test>
+
+    <test name="Category, Product" parallel="classes">
+        <parameter name="BROWSER" value="chrome"  ></parameter>
+        <classes>
+            <class name="AT04_CMS.testcases.CategoryTest"></class>
+            <class name="AT04_CMS.testcases.ProductTest"></class>
+        </classes>
+    </test>
+
+</suite>

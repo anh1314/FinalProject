@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LoginTest" verbose="1" >
+
+    <test name="Login" parallel="methods">
+        <classes>
+            <class name="AT04_CMS.testcases.LoginTest"> </class>
+        </classes>
+    </test>
+
+</suite>
